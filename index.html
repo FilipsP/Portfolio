@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <link
-      href="https://fonts.googleapis.com/css?family=Jura:400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext"
+      href="https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
       rel="stylesheet"
     />
     <link
@@ -19,7 +19,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="js/preload.js"></script>
     <script src="js/particles.min.js"></script>
-    <script src="js/particlesStart.js"></script>
+    <!--<script src="js/particlesStart.js"></script> -->
+    <script src="js/toTop.js"></script>
   </head>
   <body>
     <div id="page-preloader" class="preloader">
@@ -40,9 +41,22 @@
     </nav>
     <div class="container">
       <section id="about">
-        <h1>Hello world</h1>
+        <h1 class="title">About me</h1>
+        <p>
+          Hey I am Filipp and i am a junior software developer
+        </p>
+      </section>
+      <section id="projects">
+        <h1 class="title">Projects</h1>
+      </section>
+      <section id="contacts">
+        <h1 class="title" style="padding-bottom: 800px;">Contacs</h1>
       </section>
     </div>
+    <button onclick="toTopFunc()" id="toTopBtn" title="To top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <footer></footer>
     <script>
       $(".handle").on("click", function() {
         $("nav ul").toggleClass("showing");
