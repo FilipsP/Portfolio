@@ -1,77 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <title>Portfolio</title>
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/preloader.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/preload.js"></script>
-    <script src="js/particles.min.js"></script>
-    <!--<script src="js/particlesStart.js"></script> -->
-    <script src="js/toTop.js"></script>
-  </head>
-  <body>
-    <div id="page-preloader" class="preloader">
-      <span class="loader"><span class="loader-inner"></span></span>
-      <span class="loading">Loading...</span>
-    </div>
-    <div id="particles-js"></div>
-    <nav>
-      <ul>
-        <a class="animated" href="#about"><li>About</li></a>
-        <a class="animated" href="#projects"><li>Projects</li></a>
-        <a class="animated" href="#contacts"><li>Contacts</li></a>
-      </ul>
-      <div class="handle">
-        <p class="menu">Menu</p>
-        <div class="menu-icon"><i class="fa fa-bars"></i></div>
-      </div>
-    </nav>
-    <div class="container">
-      <section id="about">
-        <h1 class="title">About me</h1>
-        <p>
-          Hey I am Filipp and i am a junior software developer
-        </p>
-      </section>
-      <section id="projects">
-        <h1 class="title">Projects</h1>
-      </section>
-      <section id="contacts">
-        <h1 class="title">Contacs</h1>
-        <div id="contact-links" style="padding-bottom: 800px;">
-          <a id="profile-link" href="" target="_blank"
-            ><i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a
-          >
-          <a id="profile-link" href="" target="_blank"
-            ><i class="fab fa-github" aria-hidden="true"></i> GitHub</a
-          >
-          <a id="profile-link" href="" target="_blank"
-            ><i class="fas fa-envelope"></i> Send an email</a
-          >
-        </div>
-      </section>
-    </div>
-    <button onclick="toTopFunc()" id="toTopBtn" title="To top">
-      <i class="fas fa-chevron-up"></i>
-    </button>
-    <footer></footer>
-    <script>
-      $(".handle").on("click", function() {
-        $("nav ul").toggleClass("showing");
-      });
-    </script>
-  </body>
+	<title>Portfolio</title>
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+			integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+			crossorigin="anonymous"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/preloader.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="js/preload.js"></script>
+		<script src="js/particles.min.js"></script>
+		<!--<script src="js/particlesStart.js"></script> -->
+		<script src="js/toTop.js"></script>
+	</head>
+	<body>
+		<div id="page-preloader" class="preloader">
+			<span class="loader"><span class="loader-inner"></span></span>
+			<span class="loading">Loading...</span>
+		</div>
+		<div id="particles-js"></div>
+		<nav>
+			<ul>
+				<a class="animated" href="#about"><li>About</li></a>
+				<a class="animated" href="#projects"><li>Projects</li></a>
+				<a class="animated" href="#contacts"><li>Contacts</li></a>
+			</ul>
+			<div class="handle">
+				<p class="menu">Menu</p>
+				<div class="menu-icon"><i class="fa fa-bars"></i></div>
+			</div>
+		</nav>
+		<div class="container">
+			<!-- ! About section -->
+			<section id="about">
+				<h1 class="title">About me</h1>
+				<p>
+					Hey I am Filipp and i am a junior software developer
+				</p>
+			</section>
+			<!-- ! Projects section -->
+			<section id="projects">
+				<h1 class="title">Projects</h1>
+				<div class="projects-grid">
+					<!--  ---------------------------------------------------------------   -->
+					<div id="project-tile">
+						<a class="project" href="" target="_blank">
+							<img
+								class="project-image"
+								src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+							/>
+							<p class="project-title">Tribute page</p>
+						</a>
+					</div>
+					<!-- *  ---------------------------------------------------------------   -->
+					<div id="project-tile">
+						<a class="project" href="" target="_blank">
+							<img
+								class="project-image"
+								src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+							/>
+							<p class="project-title">Tribute page</p>
+						</a>
+					</div>
+					<!-- *  ---------------------------------------------------------------   -->
+					<div id="project-tile">
+						<a class="project" href="" target="_blank">
+							<img
+								class="project-image"
+								src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+							/>
+							<p class="project-title">Tribute page</p>
+						</a>
+					</div>
+					<!-- *  ---------------------------------------------------------------   -->
+					<div id="project-tile">
+						<a class="project" href="" target="_blank">
+							<img
+								class="project-image"
+								src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+							/>
+							<p class="project-title">Tribute page</p>
+						</a>
+					</div>
+				</div>
+				<a href="" target="_blank" class="btn btn-show-all"
+					>Show all<i class="fas fa-chevron-right"></i
+				></a>
+			</section>
+			<!-- ! Contacts section -->
+			<section id="contacts">
+				<h1 class="title">Contacs</h1>
+				<div id="contact-links" style="padding-bottom: 200px;">
+					<a id="profile-link" href="" target="_blank"
+						><i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a
+					>
+					<a id="profile-link" href="" target="_blank"
+						><i class="fab fa-github" aria-hidden="true"></i> GitHub</a
+					>
+					<a id="profile-link" href="" target="_blank"
+						><i class="fas fa-envelope"></i> Send an email</a
+					>
+				</div>
+			</section>
+		</div>
+		<button onclick="toTopFunc()" id="toTopBtn" title="To top">
+			<i class="fas fa-chevron-up"></i>
+		</button>
+		<footer></footer>
+		<script>
+			$(".handle").on("click", function() {
+				$("nav ul").toggleClass("showing");
+			});
+		</script>
+	</body>
 </html>
