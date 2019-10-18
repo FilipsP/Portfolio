@@ -64,13 +64,39 @@ nav ul {
 
 nav ul li {
 	display: inline-block;
-	color: white;
+
 	padding: 1.5rem 3rem;
 	font-size: 1.4rem;
 	font-weight: 600;
+	position: relative;
 }
 
-nav ul li a {
+nav ul li:hover {
+	color: white;
+}
+
+nav ul li::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+nav ul li:hover::before {
+	visibility: visible;
+	background-color: white;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.animated {
 	color: white;
 	text-decoration: none;
 }
@@ -118,35 +144,6 @@ p.menu {
 	}
 }
 
-.animated li {
-	position: relative;
-}
-
-.animated li:hover {
-	color: white;
-}
-
-.animated li::before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 3px;
-	bottom: 0;
-	left: 0;
-	visibility: hidden;
-	-webkit-transform: scaleX(0);
-	transform: scaleX(0);
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	transition: all 0.4s ease-in-out 0s;
-}
-
-.animated li:hover::before {
-	visibility: visible;
-	background-color: white;
-	-webkit-transform: scaleX(1);
-	transform: scaleX(1);
-}
-
 #toTopBtn {
 	visibility: hidden;
 	position: fixed;
@@ -186,7 +183,7 @@ p.menu {
 	transition: transform 0.3s ease-out;
 }
 
-#profile-link:hover {
+.profile-link:hover {
 	transform: translateY(8px);
 }
 
@@ -203,6 +200,7 @@ p.menu {
 	background: #414a57;
 	/*box-shadow: 1px 1px 1px 2px rgba(3, 3, 3, 0.1);*/
 	border-radius: 2px;
+	padding-bottom: 1rem;
 }
 
 .project {
