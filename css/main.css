@@ -70,6 +70,11 @@ nav ul li {
 	font-weight: 600;
 }
 
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
 .handle {
 	width: 100%;
 	box-sizing: border-box;
@@ -174,7 +179,7 @@ p.menu {
 	font-size: 1.5rem;
 }
 
-#profile-link {
+.profile-link {
 	text-decoration: none;
 	color: white;
 	padding: 1rem;
@@ -194,7 +199,7 @@ p.menu {
 	padding-bottom: 6rem;
 }
 
-#project-tile {
+.project-tile {
 	background: #414a57;
 	/*box-shadow: 1px 1px 1px 2px rgba(3, 3, 3, 0.1);*/
 	border-radius: 2px;
