@@ -79,7 +79,7 @@ section{
 
 /* *-------------responsive navbar------------------- */
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 670px){
 
   .nav_list{
     width: 100%;
